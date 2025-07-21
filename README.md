@@ -1,17 +1,6 @@
 # 📘 Hudl E2E Tests (Playwright)
 This project contains end-to-end (E2E) tests for the [Hudl](https://www.hudl.com/) web application using [Playwright](https://playwright.dev/). These tests were developed as part of a technical interview to demonstrate automation skills and test design practices.
 
-# 🗂 Folder Structure
-test/
-├── playwright.config.js # Playwright configuration
-├── e2e/
-│ ├── login.spec.js # Login tests
-│ └── ... # Other test files
-├── utils/
-│ ├── selectors.js # Custom selector helpers
-│ └── helpers.js # Navigation or utility functions
-└── README.md    # You're here
-
 # ▶️ Running Tests
 
 ## ⚙️ Setup Instructions
@@ -31,10 +20,15 @@ test/
    npm install
 
 
-## Credentials
-Create a .env file with your credentials:
-`loginEmailHudl: 'your@email.com'`,
-`loginPasswordHudl: 'yourpassword'`,
+## 🔐 Credentials
+
+Create a `.env` file in the project root with the following variables:
+
+```env
+loginEmailHudl=youremail@email.com
+loginPasswordHudl=yourpassword
+
+📌 These values are required to run login tests. See .env.example for reference.
 
 ## ✅ 🎭 Playwright
 
