@@ -28,7 +28,7 @@ Create a `.env` file in the project root with the following variables:
 loginEmailHudl=youremail@email.com
 loginPasswordHudl=yourpassword
 ```
-📌 These values are required to run login tests. See .env.example for reference.
+📌 These values are required to run login tests. See `.env.example` for reference.
 
 ## ✅ 🎭 Playwright
 
