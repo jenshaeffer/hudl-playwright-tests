@@ -30,7 +30,7 @@ loginPasswordHudl=yourpassword
 ```
 📌 These values are required to run login tests. See `.env.example` for reference.
 
-## ✅ 🎭 Playwright
+## 🎭 Playwright
 
 Run the Playwright UI:
 `npx playwright test --ui`
@@ -41,5 +41,22 @@ Run all tests in headless mode:
 Run all tests in headless mode:
 `npx playwright test e2e/hudl-login-success.spec.js`
 
-# 📌 Notes
-[Playwright Docs](https://playwright.dev/)
+
+# 🔧 Notes & Potential Improvements
+- Log in navigation: I explored ways to shortcut directly to the login page and found that navigating to https://www.hudl.com/home redirects unauthenticated users to the login flow. For this project, I included tests that cover both direct login and redirected paths. Depending on how users typically arrive at the login page, one approach may be sufficient.
+
+- Command and helper structure: I started with a minimal set of helpers for this exercise. Reusable commands could be added to reduce repetition further, depending on Hudl’s preferred automation patterns.
+
+- Test data strategy: The tests currently use real credentials. In a production setting, these should be replaced with test accounts or dynamically created data that is cleaned up after each run.
+
+- I approach end-to-end testing with the customer in mind, prioritizing scenarios that reflect real user behavior, ensure high-confidence coverage of critical flows, and verify the text and interactions users actually experience.
+
+- Additional coverage opportunities:
+
+   - Third-party login options (Google, Facebook, Apple)
+
+   - Password reset workflow
+
+   - Create account workflow
+
+   - Edit email address workflow during login
