@@ -13,7 +13,7 @@ test('User can log in to Hudl', async ({ page }, testInfo) => {
     await expect(getByQaId(page, 'login-select')).toHaveText('Log in');
     await getByQaId(page, 'login-select').click();
 
-    // Click "Log in with Hudl"
+    // Click "Hudl"
     await expect(getByQaId(page, 'login-hudl')).toHaveText('Hudl');
     await getByQaId(page, 'login-hudl').click();
 

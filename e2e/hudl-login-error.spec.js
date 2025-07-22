@@ -37,7 +37,7 @@ test.describe('Hudl login error handling', () => {
         // Fill in email to the login form
         await page.fill('#username', 'wrongemail@gmail.com');
 
-        // Click "Continue" to go to password page
+        // Click "Continue"
         await expect(page.locator('button[name="action"]')).toHaveText('Continue');
         await page.click('button[name="action"]');
 
@@ -62,7 +62,7 @@ test.describe('Hudl login error handling', () => {
         // Verify password field is displayed
         await expect(page.locator('#password')).toBeVisible();
 
-        // Fill in password to the login form
+        // Fill in password on the login form
         await page.fill('#password', password);
 
         // Click "Continue"

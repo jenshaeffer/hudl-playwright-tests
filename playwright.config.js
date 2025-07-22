@@ -31,7 +31,6 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://localhost:3000',
-    baseURL: 'https://automationexercise.com',
     // loginEmail: process.env.LOGIN_EMAIL,
     // loginPassword: process.env.LOGIN_PASSWORD,
 
