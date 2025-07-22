@@ -38,7 +38,7 @@ Run the Playwright UI:
 Run all tests in headless mode:
 `npx playwright test`
 
-Run all tests in headless mode:
+Run single test in headless mode:
 `npx playwright test e2e/hudl-login-success.spec.js`
 
 
